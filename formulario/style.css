@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: titulo;
+    src: url(fontes/bubblegum-sans-regular.otf);
+    font-weight: normal;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #FFF;
+    --cor7: #000;
+
+    --fonte-títul: 'titulo';
+}
+
+body {
+    background: var(--cor1);
+}
+
+#interface{
+    background: var(--cor6);
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.topo{
+    height: 70px;
+
+}
+
+.logo img{
+    background: rgb(146, 21, 21);;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.menu{
+    display: block;
+    position: absolute;
+    width: 800px;
+    left: 800px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li{
+    float: left;
+}
