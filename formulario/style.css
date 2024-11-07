@@ -173,4 +173,32 @@ fieldset{
     background: url(img/ipgto.png) no-repeat 95% 95%;
 }
 
+.btn{
+    background: var(--cor7);
+    color: var(--cor1);
+    font-size: 1.1em;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 0px 5px 15px 5px;
+
+}
+
+#rodape{
+    border-top: 2px solid  var(--cor3);
+    text-align: center;
+  
+}
+
+#rodape{
+    margin: 10 px 0 px;
+    font-size: 1.2em;
+    font-family: var(--fonte-títul);
+}
+
+#rodape{
+    text-decoration: none;
+    
+
+}
+
 
