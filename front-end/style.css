@@ -1,15 +1,21 @@
 @charset "UTF-8";
 
 /* Fontes externas */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /* Título */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); /* Texto */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* Título */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* Texto */
 
 /* Variáveis CSS */
 :root {
-    --cor1: #e8e8e8; /* fontes */
-    --cor2: #a1a1a1; /* cartão */
-    --cor3: #434343; /* menu, rodapé, cartão */
-    --cor4: #173261; /* botão */
+    --cor1: #e8e8e8;
+    /* fontes */
+    --cor2: #a1a1a1;
+    /* cartão */
+    --cor3: #434343;
+    /* menu, rodapé, cartão */
+    --cor4: #173261;
+    /* botão */
     --cor5: #FFF;
     --cor6: #000;
 
@@ -31,15 +37,37 @@ body {
 
 /* Layout */
 .container {
-    display: flex;
+    margin: 0 auto;
+    background: #a1a1a1
 }
 
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background: #173261;
+}
+
+
 /* Smartphone portrait (em pé) */
+header {
+    height: 60px;
+
+}
 
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
     body {
         background: rgb(185, 166, 130);
+    }
+
+    .container {
+        max-width: 540px;
     }
 }
 
@@ -48,11 +76,20 @@ body {
     body {
         background: rgb(130, 185, 159);
     }
+
+    .container {
+        max-width: 720;
+    }
 }
+
 /* Tablet landscape */
 @media (min-width: 992px) {
     body {
         background: rgb(156, 130, 185);
+    }
+
+    .container {
+        max-width: 960px;
     }
 }
 
@@ -60,5 +97,19 @@ body {
 @media (min-width: 1200px) {
     body {
         background: rgb(130, 163, 185);
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+
+    /*Cabeçalho*/
+    header {
+        height: 125px;
+    }
+
+    .logo img {
+        margin-top: 30px;
+        margin-left: 30px;
     }
 }

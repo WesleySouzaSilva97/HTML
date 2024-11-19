@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprenda HTML5, CSS3 e SEO de forma simples, prática e objetiva desenvolvendo passo a passo de um site one page moderno e responsivo."> <!-- mpaximo de 55 caracteres contando com os espaços-->
+    <meta name="description"
+        content="Aprenda HTML5, CSS3 e SEO de forma simples, prática e objetiva desenvolvendo passo a passo de um site one page moderno e responsivo.">
+    <!-- mpaximo de 55 caracteres contando com os espaços-->
     <meta name="keywords" content="html, html5, css, css3, seo, one page, ...">
     <title>Front End - One Page Site</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header id="inicio">
-        <div class="container">
+        <div class="container flex">
             <div class="logo">
                 <img src="img/logo_front.png" alt="Logo Front End">
             </div>
             <nav class="menu">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">&#x2630;</label> <!-- &#x2630 é o  ícone dos três pontos ... -->
-                
+
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
@@ -27,42 +31,72 @@
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
-
-            <div></div>
         </div>
     </header>
 
     <!-- Destaque -->
-    <main>
-        <h1>FRONT END</h1>
-        <h2>Damos a vida aos seus negócios digitais.</h2>
+    <main id="">
+        <div class="container">
+            <h1>FRONT END</h1>
+            <h2>Damos a vida aos seus negócios digitais.</h2>
+        </div>
     </main> <!-- Conteúdo principal -->
 
     <!-- Sobre -->
     <section id="sobre">
-        <h2>Front End</h2>
+        <div class="container">
+            <h2>Front End</h2>
+        </div>
     </section>
 
     <!-- One page - Vídeo explicativo -->
     <section>
-        <h2>One Page Site</h2>
+        <div class="container">
+            <h2>One Page Site</h2>
+        </div>
     </section>
-    
+
     <!-- Wireframe - PDF -->
-    <section>
-        <h2>Wireframe</h2>
+    <section id="wireframe">
+        <div class="container">
+            <h2>Wireframe</h2>
+        </div>
     </section>
 
     <!-- Conteúdo - Cards -->
     <section id="conteudo">
-        <h2>Conteúdo</h2>
-        <h3>HTML5</h3>
-        <h3>CSS3</h3>
-        <h3>JavaScript</h3>
+        <div class="container">
+            <h2>Conteúdo</h2>
+            <h3>HTML5</h3>
+            <h3>CSS3</h3>
+            <h3>JavaScript</h3>
+        </div>
     </section>
 
     <!-- Rodapé -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div clas="copyright">
+                <p>&#169; 2024 - Somente para fins educativos.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="img/whatsapp.png"
+                        alt="whatsapp"></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/x_twitter.png" alt="x_twitter"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt="youtube"></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank"><img
+                        src="img/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/WesleySouzaSilva97" target="_blank"><img src="img/github.png"
+                        alt="github"></a>
+            </div>
+
+    </footer>
+    <a href="#inicio" id="topo">
+        <img src="img/topo.png" alt="Ir para o inicio do site">
+
+
+    </a>
 
 </body>
+
 </html>
