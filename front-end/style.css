@@ -38,7 +38,7 @@
 /* Layout */
 .container {
     margin: 0 auto;
-    
+
 }
 
 #topo {
@@ -46,22 +46,23 @@
     right: 10px;
     bottom: 10px;
 }
+
 .botao {
     text-decoration: none;
     color: var(--cor1);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 700;
     background: var(--cor4);
     border: 1px solid var(--cor1);
     border-radius: 25px;
     padding: 10px 40px;
 }
-    
+
 
 .flex {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 
@@ -111,7 +112,7 @@ nav ul li a {
 }
 
 /* Destaque */
- 
+
 main {
     height: 75vh;
     background: url(img/banner_front.jpg) no-repeat;
@@ -122,14 +123,14 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-family: var(--titulo);
+    font-family: monospace;
 }
 
-main h1{
+main h1 {
     font-size: 3em;
 }
 
-main h2{
+main h2 {
     font-size: 1.5em;
     margin: 20px 0px 50px 0px;
 }
@@ -147,6 +148,11 @@ main h2{
     label {
         right: 60px;
     }
+
+    /* Destaque*/
+    main h1 main h2 {
+        text-shadow: var(--cor6) 0.5em 0.5em 0.5em
+    }
 }
 
 /* Tablet portrait */
@@ -163,6 +169,20 @@ main h2{
         right: 35px;
     }
 
+    /*Destque*/
+    main {
+        height: 45vh;
+
+    }
+
+    main h1 {
+        font-size: 5em
+    }
+
+    main h2 {
+        font-size: 2em;
+
+    }
 
 }
 
@@ -175,11 +195,16 @@ main h2{
     .container {
         max-width: 960px;
     }
+
+    /*DESTAQUE*/
+    main {
+        height: 70vh;
+    }
 }
 
 /* PC */
 @media (min-width: 1200px) {
-   /** body {
+    /** body {
         background: rgb(130, 163, 185);
     }*/
 
@@ -202,7 +227,7 @@ main h2{
 
     }
 
-    nav ul{
+    nav ul {
         position: static;
         height: auto;
         background: transparent;
@@ -210,15 +235,15 @@ main h2{
     }
 
     nav ul li {
-        float:left ;
+        float: left;
         border: 0;
     }
 
-    nav ul li a{
+    nav ul li a {
         color: rgb(80, 255, 89);
     }
 
     nav ul li a:hover {
         color: crimson;
 
-}
+    }
