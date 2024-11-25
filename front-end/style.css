@@ -64,6 +64,10 @@
     justify-content: space-between;
 
 }
+.flex2{
+    display: flex;
+    align-items: center;
+}
 
 
 /* Smartphone portrait (em pé) */
@@ -134,6 +138,39 @@ main h2 {
     font-size: 1.5em;
     margin: 20px 0px 50px 0px;
 }
+
+/*SOBRE*/
+#sobre {
+    background: url(img/background5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+}
+
+.destaque_sobre {
+    display: none;
+
+}
+
+.texto_sobre {
+    color: #f0eeee;
+    padding: 0px 10px;
+    font-family: var(--texto);
+    font-size: 1em;
+}
+
+.texto_sobre h2 {
+    margin-bottom: 15px;
+}
+
+.texto_sobre p{
+    font-size: 1.3em;
+}
+
+.topico_sobre {
+    margin-top: 20px;
+}
+    
 
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
@@ -246,4 +283,17 @@ main h2 {
     nav ul li a:hover {
         color: crimson;
 
+    }
+
+    /*SOBRE*/
+    .destaque_sobre {
+        display:inline;
+    }
+    .destaque_sobre img {
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+
+    #sobre{
+        background-attachment: fixed; /*efeito parallax*/
     }
