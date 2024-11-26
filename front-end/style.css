@@ -68,6 +68,11 @@
     display: flex;
     align-items: center;
 }
+.flex3 {
+    display: flex;
+    flex-direction: column;
+
+}
 
 
 /* Smartphone portrait (em pé) */
@@ -170,7 +175,30 @@ main h2 {
 .topico_sobre {
     margin-top: 20px;
 }
-    
+
+.topico_sobre img{
+    margin-right: 10px;
+}
+
+/* ONE PAGE*/
+#onepage {
+    padding:  50px 10px;
+}
+
+#onepage h2 {
+    font-family: 'Segoe UI';
+    margin-bottom:  10px;
+    font-size: 2em;
+}
+#onepage p{
+    font-family: 'Lucida Sans';
+    margin-bottom: 25px;
+    font-size: 1.4em;
+}
+.video iframe{
+    width: 340px;
+    height: 190px;
+}
 
 /* Smartphone landscape (deitado) */
 @media (min-width: 576px) {
@@ -190,6 +218,12 @@ main h2 {
     main h1 main h2 {
         text-shadow: var(--cor6) 0.5em 0.5em 0.5em
     }
+}
+
+/*ONEPAGE*/
+.video iframe{
+    width: 560px;
+    height: 315px;
 }
 
 /* Tablet portrait */
@@ -220,8 +254,20 @@ main h2 {
         font-size: 2em;
 
     }
+    
 
 }
+
+/*SOBRE*/
+.texto_sobre h2 {
+    font-size: 2.8em;
+
+}
+
+.texto_sobre p { 
+    font-size: 1.6em;
+}
+
 
 /* Tablet landscape */
 @media (min-width: 992px) {
@@ -294,6 +340,12 @@ main h2 {
         margin-right: 50px;
     }
 
-    #sobre{
+    #sobre {
         background-attachment: fixed; /*efeito parallax*/
     }
+    /*ONEPAGE*/
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
+}
