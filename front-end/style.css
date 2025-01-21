@@ -231,7 +231,18 @@ main h2 {
     font-family: var(--texto);
 }
 
+/*Cartões */
 
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    padding-bottom:  25px;
+    text-align: center;
+    font-size:  2em;
+    font-family:  var(--titulo);
+}
 
 
 /* Smartphone landscape (deitado) */
