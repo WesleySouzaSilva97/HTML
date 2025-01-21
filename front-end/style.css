@@ -74,6 +74,39 @@
 
 }
 
+.card{
+    margin-top: 25px;
+    width: 340px;
+    height: 528px;
+    background: var(--cor2);
+    border:  1px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-family: var(--titulo);
+    font-size: 1.3em;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    font-family: var(--texto);
+    font-size: 1.2em;
+
+}
+.card a {
+    padding: 10px 100px;
+    font-family: var(--texto);
+    border: 0;
+
+}
 
 /* Smartphone portrait (em pé) */
 header {
