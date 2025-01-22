@@ -71,7 +71,12 @@
 .flex3 {
     display: flex;
     flex-direction: column;
+}
 
+.flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card{
