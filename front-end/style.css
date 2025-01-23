@@ -78,6 +78,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
 
 .card{
     margin-top: 25px;
@@ -280,6 +285,53 @@ main h2 {
     text-align: center;
     font-size:  2em;
     font-family:  var(--titulo);
+}
+
+/*RODAPÉ*/
+.flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+address {
+    padding: 35px 10px 50px 10px;
+    background-image: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+}
+
+address a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+address img {
+    padding-top: 15px;
+
+}
+
+.icone_local {
+    display: none;
+}
+
+.dados {
+    margin: 30px 0px 15px 0px;
+}
+
+.google_maps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.social {
+    margin: 15px 0px;
 }
 
 
